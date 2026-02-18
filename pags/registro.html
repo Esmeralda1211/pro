@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Clinica Dental</title>
+    <link rel="stylesheet" href="/css/registro.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="formulario-caja">
+            <div class="logo">
+                <span class="icono-diente">&#9786;</span>
+                <h1>Clinica Odontológica BEA</h1>
+            </div>
+            
+            <h2>Registro de Paciente</h2>
+            <p class="subtitulo">Completa tus datos para registrarte</p>
+            
+            <form action="register.php" method="POST">
+                <div class="fila">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                    </div>
+                </div>
+                
+                <div class="fila">
+                    <div class="campo">
+                        <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" name="dni" placeholder="12345678" maxlength="8" required>
+                    </div>
+                </div>
+                
+                <div class="campo">
+                    <label for="telefono">Numero de Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="987654321" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="correo">Correo Electronico</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="password">Contrasena</label>
+                    <input type="password" id="password" name="password" placeholder="Crea una contrasena" required>
+                </div>
+                
+                <button type="submit" class="btn-registrar">Registrarse</button>
+            </form>
+            
+            <div class="enlace">
+                <p>Ya tienes cuenta? <a href="/pags/login.html">Inicia sesion</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
