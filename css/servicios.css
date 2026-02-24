@@ -202,7 +202,7 @@ html {
 
 .banner {
 	background-image: linear-gradient(100deg, #000000, #00000020),
-		url('images/fondeo.jpeg');
+		url('/images/fondeo.jpeg');
 	height: 60rem;
 	background-size: cover;
 	background-position: center;
@@ -241,137 +241,10 @@ html {
 }
 
 
-.main-content {
-	background-color: var(--background-color);
-}
-
-
-.features {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 4rem;
-	padding: 4rem 0;
-}
-
-.cartas {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 2rem;
-
-	background-color: #fff;
-	border-radius: 1rem;
-	padding: 2rem 0;
-}
-
-.cartas i {
-	font-size: 2.7rem;
-	color: var(--primary-color);
-}
-
-.cartitas {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-}
-
-.cartitas span {
-	font-weight: 700;
-	font-size: 1.2rem;
-	color: var(--dark-color);
-}
-
-.cartitas p {
-	color: #777;
-	font-weight: 500;
-}
 
 
 
-.top-categories {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	margin-bottom: 3rem;
-}
-
-.container-categories {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 3rem;
-}
-
-.card-category {
-	height: 20rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 2rem;
-	gap: 2rem;
-}
-
-.category-orto {
-	background-image: linear-gradient(#00000080, #00000080);
-	background-size: cover;
-	background-position: bottom;
-	background-repeat: no-repeat;
-}
-
-.category-implantes {
-	background-image: linear-gradient(#00000080, #00000080);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.category-extracciones {
-	background-image: linear-gradient(#00000080, #00000080);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.card-category p {
-	font-size: 2.5rem;
-	color: #fff;
-	text-transform: capitalize;
-	position: relative;
-}
-
-.card-category p::after {
-	content: '';
-	width: 2.5rem;
-	height: 2px;
-	background-color: #fff;
-	position: absolute;
-	bottom: -1rem;
-	left: 50%;
-	transform: translate(-50%, 50%);
-}
-
-.card-category span {
-	font-size: 1.6rem;
-	color: #fff;
-	cursor: pointer;
-}
-
-.card-category span:hover {
-	color: var(--primary-color);
-}
-
-
-.top-products {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	margin-bottom: 3rem;
-}
-
-
-
-/* ===== SECCIÓN FLASHCARDS ===== */
-
+/* Section */
 .flashcards-section {
     padding: 60px 20px;
     text-align: center;
@@ -472,269 +345,74 @@ html {
 
 
 
-/* ===== CONTENEDOR ===== */
 
-.container-products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
 
-/* ===== CARD ===== */
-
-.card-product {
-    background: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: 0.4s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-.card-product:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* ===== IMAGEN ===== */
-
-.container-img {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-}
-
-.container-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.4s ease;
-}
-
-.card-product:hover .container-img img {
-    transform: scale(1.05);
-}
-
-/* ===== BOTONES FLOTANTES ===== */
-
-.button-group {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.button-group span {
-    background: white;
-    padding: 8px;
-    border-radius: 50%;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.button-group span:hover {
-    background: var(--primary-color);
-    color: #fff;
-}
-
-/* ===== CONTENIDO ===== */
-
-.content-card-product {
-    padding: 20px;
+/* Reviews Section */
+.reviews-section {
+    padding: 80px 20px;
+    background: #abc6f0;
     text-align: center;
 }
 
-.stars {
-    margin-bottom: 10px;
+.reviews-title {
+    font-size: 32px;
+    margin-bottom: 50px;
 }
 
-.stars i {
-    color: #ffc107;
-    font-size: 14px;
+.reviews-container {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 
-.content-card-product h3 {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    line-height: 1.4;
+.reviews-wrapper {
+    overflow: hidden;
+    width: 100%;
 }
 
-.content-card-product .price {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--primary-color);
+.reviews-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-.content-card-product .price span {
-    font-size: 14px;
-    text-decoration: line-through;
-    color: #888;
-    margin-left: 8px;
+.review-card {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.gallery {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 30rem);
-	gap: 1.5rem;
-	margin-bottom: 3rem;
+.review-card p {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-style: italic;
 }
 
-.gallery img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.review-card h4 {
+    margin-top: 15px;
+    color: #032336;
 }
 
-.gallery-img-3 {
-	grid-column: 2/4;
-	grid-row: 1/3;
+/* Arrows */
+.arrow {
+    background: #032336;
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s;
 }
 
-
-.specials {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	margin-bottom: 3rem;
+.arrow:hover {
+    background: #055a8c;
 }
 
-
-.blogs {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-}
-
-.container-blogs {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 3rem;
-}
-
-.card-blog {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-}
-
-.card-blog .container-img {
-	border-radius: 2rem;
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-
-}
-
-.button-group-blog {
-	position: absolute;
-	bottom: 1.5rem;
-	right: -2.5rem;
-
-	display: flex;
-	gap: 0.7rem;
-	z-index: -1;
-	transition: all 0.3s ease;
-}
-
-.card-blog:hover .button-group-blog {
-	z-index: 0;
-	right: 1.5rem;
-}
-
-.button-group-blog span {
-	background-color: #fff;
-	padding: 1rem;
-	border-radius: 50%;
-	transition: all 0.4s ease;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.button-group-blog span i {
-	font-size: 1.3rem;
-}
-
-.button-group-blog span:hover {
-	background-color: var(--primary-color);
-}
-
-.button-group-blog span:hover i {
-	color: #fff;
-}
-
-.content-blog h3 {
-	font-size: 1.8rem;
-	margin-bottom: 1.7rem;
-	color: var(--dark-color);
-	font-weight: 500;
-}
-
-.content-blog h3:hover {
-	color: var(--primary-color);
-	cursor: pointer;
-}
-
-.content-blog p {
-	margin-top: 1rem;
-	font-size: 1.4rem;
-	color: #777;
-}
-
-.content-blog span {
-	color:#777;
-	font-size: 1.3rem;
-}
-
-.btn-read-more {
-	padding: 1rem 3rem;
-	background-color: #777;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.4rem;
-	border-radius: 2rem;
-	margin: 3rem 0 5rem;
-	display: inline-block;
-	cursor: pointer;
-
-}
-
-.btn-read-more:hover {
-	background-color: var(--dark-color);
-}
 
 
 
