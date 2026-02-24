@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  font-family: "Cinzel", serif;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)), 
+    url(images/fondo\ nuevo.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.menu .nav ul li{
+  position: relative;
+  float: left;
+}
+
+.menu .nav ul li a:hover{
+  color: #8bb4b5;
+}
+.menu .nav ul li a{
+  font-size: 18px;
+  padding: 20px;
+  color: #FFFDFC;
+  display: block;
+  font-weight: 600;
+}
+
+#menu{
+  display: none;
+}
+
+.menu-icono{
+  width: 25px;
+}
+
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+
+
+.header-content{
+  font-size: 75px;
+  line-height: 27px;
+  text-align: center;
+  color: #f9fafc;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.header-content h1{
+ line-height: 30PX;
+ font-size: 50px;
+}
+
+.header-content h2{
+  margin-bottom: 20px;
+}
+
+.header-content h4{
+  margin-bottom: 15px;
+}
+.header-content{
+  font-size: 16px;
+  color:#c5c5c5;
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
+
+.btn-1{
+  display: inline-block;
+  padding: 11px 35px; 
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #507c7d;
+}
+.btn-1:hover{
+  background-color: #708889;
+  transition: 0.3s;
+}
+
+
+.centro{
+  padding: 100px 0;
+  background-color: #e1e2e6;
+  position: relative;
+}
+
+.centro-content {
+  text-align: left;
+}
+
+.centro-content h2 {
+  font-size: 48px;          
+  line-height: 20px;
+  color: #444547;
+  text-transform: uppercase;
+  max-width: 600px;        
+  margin: 0 0 10px 0;      
+  text-align: center;        
+}
+
+
+.txt-p {
+  font-size: 17px;
+  color: #414247;
+  max-width: 600px;       
+  margin: 70px 0 30px 0;   
+  padding: 0;             
+  position: relative;
+  text-align: justify;     
+  line-height: 1.7;        
+}
+
+.centro-content img {
+  float: right;       
+  width: 45%;
+  margin-left: 40px;
+  margin-top: -390px;  
+  border-radius: 10px;
+  box-shadow: #414247 10px 10px 10px;
+}
+
+.estadisticas-seccion {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)), 
+    url(images/nuevo2.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+.estadisticas-seccion {
+  padding: 80px 0;
+  background-color: #e1e2e6;
+}
+
+/* Título */
+.estadisticas-seccion h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.estadisticas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.estadistica {
+  text-align: center;
+  flex: 1;
+}
+
+.estadistica .numero {
+  display: block;
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.estadistica .descripcion {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.estadisticas h1 {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+
+
+
+.historia {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.historia-titulo {
+  text-align: center;
+  font-size: 42px;
+  margin: 80px 0 20px;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+
+.historia-intro {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #0b0a0a;
+}
+
+
+
+.historia-bloque {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 420px;
+}
+
+
+.historia-bloque.reverse {
+  direction: rtl;
+}
+
+.historia-bloque.reverse .historia-texto {
+  direction: ltr;
+}
+
+
+.historia-texto {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e2e0e0;
+}
+
+.historia-texto h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.historia-texto p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #0a0909;
+  text-align: justify;
+}
+
+
+.historia-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.img-1 {
+  background-image: url(images/primeros.jpg);
+}
+
+.img-2 {
+  background-image: url(images/servicio.jpg);
+}
+
+.img-3 {
+  background-image: url(images/crecimiento.jpg);
+}
+
+.img-4 {
+  background-image: url(images/integral.jpg);
+}
+
+.img-5 {
+  background-image: url(images/digital.jpg);
+}
+
+.img-6 {
+  background-image: url(images/experiencia.jpg);
+}
+
+
+.caracter{
+  padding: 100px 0;
+  text-align: center;
+   max-width: 1400px;
+}
+
+.caracter{
+   background-image: linear-gradient(
+    rgba(75, 74, 74, 0.7),
+    rgba(150, 149, 149, 0.7)), 
+    url(images/fondou.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.caracter-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+  margin: 50px;
+}
+
+.MVV{
+   text-align: center;
+  font-size: 42px;
+  margin-bottom: 80px 0 20px;
+  color: #f0efef;
+
+}
+.caracter h2{
+  margin-bottom: 10px;
+  color: #f0efef;
+}
+.caracter-1 {
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden; /* clave para estilo blog */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.caracter-1:hover {
+  transform: translateY(-8px);
+}
+
+
+.caracter-1 img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.caracter-1 h3 {
+  font-size: 22px;
+  margin: 25px 20px 10px;
+  color: #222;
+}
+
+
+.caracter-1 p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #000000;
+  padding: 0 20px 30px;
+  text-align: justify;
+}
+
+
+.caracter .btn-1 {
+  margin-top: 20px;
+  background-color: #708889;
+} 
+
+.footer {
+  background-color: #0b0f1a;
+  color: #f1f1f1;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 6px 0;
+  color: #dcdcdc;
+}
+
+@media (max-width: 1024px) {
+  .header-content {
+    padding: 0 80px;
+    font-size: 18px;
+  }
+
+  .centro-content img {
+    width: 50%;
+    margin-top: -250px;
+  }
+
+  .historia-bloque {
+    grid-template-columns: 1fr;
+  }
+
+  .historia-texto {
+    padding: 40px;
+  }
+
+  .caracter-content {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header{
+    padding: 80px 0;
+    min-height: 80vh;
+    background-attachment: scroll;
+  }
+
+  .menu label{
+    display: block;
+  }
+
+  .menu .nav{
+    display: none;
+  }
+
+  .header-content {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  .centro-content img {
+    float: none;
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  .txt-p {
+    margin: 30px 0;
+  }
+
+  .estadisticas {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .caracter-content {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header-content h1 {
+    font-size: 32px;
+  }
+
+  .header-content {
+    padding: 0 15px;
+  }
+
+  .centro-content h2 {
+    font-size: 36px;
+  }
+
+  .estadisticas-seccion h3 {
+    font-size: 26px;
+  }
+
+  .caracter-content {
+    margin: 15px;
+  }
+}
