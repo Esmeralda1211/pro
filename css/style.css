@@ -17,103 +17,215 @@ body{
   margin: 0 auto;
 }
 
-header{
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)), 
-    url(images/fondo\ nuevo.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    background-attachment: fixed;
-    padding: 100px 0;
+.container-hero {
+	background-color: var(--background-color);
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+
+.content-customer-support {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.container-logo i {
+	font-size: 3rem;
+}
+
+.container-logo h1 a {
+	text-decoration: none;
+	color: #000;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.container-user {
+	display: flex;
+	margin-top: 0px;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.container-user .text{ 
+	text-decoration:none;
+	color: #fff;
+	background-color: var(--primary-color);
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3rem;
+
+}
+.container-user .fa-user {
+	font-size: 3rem;
+	color: var(--primary-color);
+	padding-right: 2.5rem;
+	border-right: 1px solid #e2e2e2;
+    
+}
+
+.container-user a{
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: var(--dark-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+
+}
+
+.container-user a:hover{
+	color: #fff;
+}
+
+.container-navbar {
+	background-color: var(--primary-color);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.navbar .fa-bars {
+	display: none;
 }
 
 .menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	gap: 2rem;
 }
 
-
-.menu .nav ul li{
-  position: relative;
-  float: left;
+.menu li {
+	list-style: none;
 }
 
-.menu .nav ul li a:hover{
-  color: #8bb4b5;
-}
-.menu .nav ul li a{
-  font-size: 18px;
-  padding: 20px;
-  color: #FFFDFC;
-  display: block;
-  font-weight: 600;
+.menu a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: var(--dark-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
 }
 
-#menu{
-  display: none;
+.menu a::after {
+	content: '';
+	width: 1.5rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	opacity: 0;
+	transition: all 0.3s ease;
 }
 
-.menu-icono{
-  width: 25px;
+.menu a:hover::after {
+	opacity: 1;
 }
 
-.menu label{
-  cursor: pointer;
-  display: none;
+.menu a:hover {
+	color: #fff;
 }
 
-
-.header-content{
-  font-size: 75px;
-  line-height: 27px;
-  text-align: center;
-  color: #f9fafc;
-  text-transform: uppercase;
-  margin-bottom: 35px;
-  margin-top: 10px;
+.search-form {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 2px solid #fff;
+	border-radius: 2rem;
+	background-color: #fff;
+	height: 4.4rem;
+	overflow: hidden;
 }
 
-.header-content h1{
- line-height: 30PX;
- font-size: 50px;
+.search-form input {
+	outline: none;
+	font-family: inherit;
+	border: none;
+	width: 25rem;
+	font-size: 1.4rem;
+	padding: 0 2rem;
+	color: #777;
+	cursor: pointer;
 }
 
-.header-content h2{
-  margin-bottom: 20px;
+.search-form input::-webkit-search-cancel-button {
+	appearance: none;
 }
 
-.header-content h4{
-  margin-bottom: 15px;
-}
-.header-content{
-  font-size: 16px;
-  color:#c5c5c5;
-  padding: 0 250px;
-  margin-bottom: 25px;
+.search-form .btn-search {
+	border: none;
+	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 1rem;
 }
 
-.btn-1{
-  display: inline-block;
-  padding: 11px 35px; 
-  color: #ffffff;
-  text-transform: uppercase;
-  border-radius: 10px;
-  background-color: #507c7d;
+.btn-search i {
+	font-size: 2rem;
+	color: #fff;
 }
-.btn-1:hover{
-  background-color: #708889;
-  transition: 0.3s;
+
+.banner {
+	background-image: linear-gradient(100deg, #000000, #00000020),
+		url('images/fondeo.jpeg');
+	height: 60rem;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
+
+.content-banner {
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 25rem 0;
+}
+
+.content-banner p {
+	color: var(--primary-color);
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
+}
+
+.content-banner h2 {
+	color: #fff;
+	font-size: 3.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.content-banner a {
+	margin-top: 2rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: var(--primary-color);
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3rem;
+}
+
 
 
 .centro{
