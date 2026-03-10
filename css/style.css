@@ -293,7 +293,7 @@ html {
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)), 
-    url(images/nuevo2.jpg);
+    url(/images/nuevo2.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -431,27 +431,27 @@ html {
 
 
 .img-1 {
-  background-image: url(images/primeros.jpg);
+  background-image: url(/images/primeros.jpg);
 }
 
 .img-2 {
-  background-image: url(images/servicio.jpg);
+  background-image: url(/images/servicio.jpg);
 }
 
 .img-3 {
-  background-image: url(images/crecimiento.jpg);
+  background-image: url(/images/crecimiento.jpg);
 }
 
 .img-4 {
-  background-image: url(images/integral.jpg);
+  background-image: url(/images/integral.jpg);
 }
 
 .img-5 {
-  background-image: url(images/digital.jpg);
+  background-image: url(/images/digital.jpg);
 }
 
 .img-6 {
-  background-image: url(images/experiencia.jpg);
+  background-image: url(/images/experiencia.jpg);
 }
 
 
@@ -465,7 +465,7 @@ html {
    background-image: linear-gradient(
     rgba(75, 74, 74, 0.7),
     rgba(150, 149, 149, 0.7)), 
-    url(images/fondou.jpg);
+    url(/images/fondou.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
