@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Clínica Dental</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="formulario-caja">
+            <div class="logo">
+                <span class="icono-diente">&#9786;</span>
+                <h1>Clínica Dental Sonrisas</h1>
+            </div>
+            
+            <h2>Iniciar Sesión</h2>
+            <p class="subtitulo">Ingresa tus credenciales para acceder al sistema</p>
+            
+            <form action="login.php" method="POST">
+                
+                <div class="campo">
+                    <label for="usuario">Nombre de Usuario</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ej. admin_juan" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Tu contraseña" required>
+                </div>
+                
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </form>
+            
+            <div class="enlace">
+                <p>¿Aún no tienes cuenta? <a href="vista_registro.php">Regístrate aquí</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

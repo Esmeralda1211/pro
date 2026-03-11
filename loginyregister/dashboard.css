@@ -1,0 +1,29 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { display: flex; height: 100vh; background-color: #f8fafc; }
+
+/* Menú Lateral */
+.sidebar { width: 250px; background-color: #0f172a; color: #ffffff; display: flex; flex-direction: column; }
+.logo-container { padding: 20px; text-align: center; border-bottom: 1px solid #1e293b; }
+.logo-container h2 { font-size: 24px; letter-spacing: 2px; }
+.nav-menu { list-style: none; padding: 20px 0; flex-grow: 1; }
+.nav-menu li { padding: 15px 25px; margin: 5px 15px; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+.nav-menu li:hover { background-color: #1e293b; }
+.nav-menu li.activo { background-color: #2563eb; font-weight: bold; }
+.nav-menu a { text-decoration: none; color: #94a3b8; display: block; }
+.nav-menu li.activo a, .nav-menu li:hover a { color: white; }
+
+/* Botón de salir */
+.logout { padding: 20px; border-top: 1px solid #1e293b; }
+.logout a { color: #f87171; text-decoration: none; display: block; text-align: center; font-weight: bold;}
+
+/* Contenido Principal */
+.main-content { flex-grow: 1; padding: 30px; overflow-y: auto; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+.header h1 { color: #1e293b; font-size: 24px; }
+.user-info { display: flex; align-items: center; gap: 10px; color: #475569; }
+.user-avatar { background-color: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px; }
+
+/* Cajas blancas de información */
+.caja-blanca { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.caja-blanca h2 { color: #1e293b; margin-bottom: 10px; font-size: 18px; }
+.caja-blanca p { color: #64748b; }
